@@ -101,7 +101,7 @@ function clock2(){
 //write min 2
     ctx.save();
     ctx.rotate( g3*x3*Math.PI/90)
-    ctx.strokeStyle = "#39E1D0";
+    ctx.strokeStyle = "#3EDE25";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
@@ -111,7 +111,7 @@ function clock2(){
 //write min 3
     ctx.save();
     ctx.rotate( g4*x4*Math.PI/90)
-    ctx.strokeStyle = "#3EDE25";
+    ctx.strokeStyle = "#39E1D0";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
