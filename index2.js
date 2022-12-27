@@ -88,40 +88,40 @@ function clock2(){
     ctx.restore();
 
 
-//write min1
+//write min2
     ctx.save();
     ctx.rotate( g2*x2*Math.PI/90)
-    ctx.strokeStyle = "#D825DE";
+    ctx.strokeStyle = "#B426DF";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(103,0);
     ctx.stroke();
     ctx.restore();
-//write min 2
+//write min3
     ctx.save();
     ctx.rotate( g3*x3*Math.PI/90)
-    ctx.strokeStyle = "#3EDE25";
+    ctx.strokeStyle = "#2658DF";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(93,0);
     ctx.stroke();
     ctx.restore();
-//write min 3
+//write min4
     ctx.save();
     ctx.rotate( g4*x4*Math.PI/90)
-    ctx.strokeStyle = "#39E1D0";
+    ctx.strokeStyle = "#26DF95";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(63,0);
     ctx.stroke();
     ctx.restore();
-//write min4
+//write min5
 ctx.save();
 ctx.rotate( g5*x5*Math.PI/90)
-ctx.strokeStyle = "#3955E1";
+ctx.strokeStyle = "#83DF26";
 ctx.lineWidth = 5;
 ctx.beginPath();
 ctx.moveTo(0,0);
@@ -129,10 +129,10 @@ ctx.lineTo(43,0);
 ctx.stroke();
 ctx.restore();
 
-// Write seconds 5
+// Write seconds 1
     ctx.save();
     ctx.rotate((g*x+180)*Math.PI/90);
-    ctx.strokeStyle = "#E13955";
+    ctx.strokeStyle = "#DF267D";
 
     //line 
     ctx.lineWidth = 5;
