@@ -1,5 +1,5 @@
 
-  
+
    g=1
    g2=1
    g3=1
@@ -10,6 +10,7 @@
    x3=1
    x4=1
    x5=1
+
 
 function play1(){
     console.log(11111)    
@@ -47,6 +48,7 @@ function play5(){
     audio1.play();   
 }
 
+function gbl(){
 
 function timeout() {
     setTimeout(
@@ -58,13 +60,13 @@ function clock2(){
     x2=x2+1
     if (x2>3){g2=-1}
     else{g2=1}
-    x3=x3+2
+    x3=x3+1.5
     if (x3>3){g3=-1}
     else{g3=1}
-    x4=x4+2.5
+    x4=x4+2
     if (x4>3){g4=-1}
     else{g4 =1}
-    x5=x5+3
+    x5=x5+2.5
     if (x5>3){g5=-1}
     else{g5 =1}
     
@@ -88,40 +90,40 @@ function clock2(){
     ctx.restore();
 
 
-//write min2
+//write min5
     ctx.save();
     ctx.rotate( g2*x2*Math.PI/90)
-    ctx.strokeStyle = "#B426DF";
+    ctx.strokeStyle = "#D825DE";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(103,0);
     ctx.stroke();
     ctx.restore();
-//write min3
+//write min 3
     ctx.save();
     ctx.rotate( g3*x3*Math.PI/90)
-    ctx.strokeStyle = "#2658DF";
+    ctx.strokeStyle = "#39E1D0";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(93,0);
     ctx.stroke();
     ctx.restore();
-//write min4
+//write min 4
     ctx.save();
     ctx.rotate( g4*x4*Math.PI/90)
-    ctx.strokeStyle = "#26DF95";
+    ctx.strokeStyle = "#3955E1";
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(63,0);
     ctx.stroke();
     ctx.restore();
-//write min5
+//write min  5
 ctx.save();
 ctx.rotate( g5*x5*Math.PI/90)
-ctx.strokeStyle = "#83DF26";
+ctx.strokeStyle = "#3EDE25";
 ctx.lineWidth = 5;
 ctx.beginPath();
 ctx.moveTo(0,0);
@@ -132,7 +134,7 @@ ctx.restore();
 // Write seconds 1
     ctx.save();
     ctx.rotate((g*x+180)*Math.PI/90);
-    ctx.strokeStyle = "#DF267D";
+    ctx.strokeStyle = "#E13955";
 
     //line 
     ctx.lineWidth = 5;
@@ -154,15 +156,15 @@ ctx.restore();
     ctx.stroke();
   
     ctx.restore();
-    console.log(x5) 
+    console.log(x2) 
 
     if (x==0){play1() }
-    if (x2==0){play2() }
-    if (x3==1){play3() }
-    if (x4==-1){play4() }
-    if (x4==1){play4() }
-    if (x5==1){play5() }
-    if (x5==-1){play5() }
+    if (x2 >= -0.5 && x2 <= 0.5){play2() }
+    if (x3 >= -1 && x3 <= 0.5){play3() }
+    if (x4 >= -1 && x4 <= 0.5){play4() }
+    // if (x4==-1){play4() }
+    if (x5 >= -1 && x5 <= 1){play5() }
+    // if (x5==-1){play5() }
     if (x>180){
         x=-1*x   
         play1()  
@@ -187,13 +189,8 @@ ctx.restore();
 }, 20);
 }
 timeout()
+}
 
-
-
-
-
-    
-
-   
+document.getElementById('btn').onclick=  gbl
 
 
